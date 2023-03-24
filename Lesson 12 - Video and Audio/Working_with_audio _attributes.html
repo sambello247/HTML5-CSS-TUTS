@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Audio Attributes</title>
+</head>
+<body>
+    <!-- 
+        **Audio Attributes**
+
+        - Controls - If this attribute is present, it will allow the user to control audio playback, including volume, seeking, and pause/resume playback.
+
+        - Loop - This Boolean attribute if specified, will allow audio automatically seek back to the start after reaching at the end.
+
+        - Preload - This attribute specifies that the audio will be loaded at page load, and ready to run. Ignored if autoplay is present.
+
+        - Src - The URL of the audio to embed. This is optional; you may instead use the <source> element within the video block to specify the video to embed.
+
+    -->
+
+
+     <!--Controls-->
+     <h2>Controls</h2>
+     <audio controls>
+         <source src="../audio/Introduction to HTML.mp3" type="audio/mp3">
+         Your browser does not support the video tag.
+     </audio>
+
+
+     <!--Loop-->
+     <h2>Loop</h2>
+     <audio controls loop>
+         <source src="../audio/Introduction to HTML.mp3" type="audio/mp3">
+         Your browser does not support the video tag.
+     </audio>
+
+     <!--Preload-->
+     <h2>Preload</h2>
+     <audio controls preload="none">
+         <source src="../audio/Introduction to HTML.mp3" type="audio/mp3">
+         Your browser does not support the video tag.
+     </audio>
+
+    
+</body>
+</html>
